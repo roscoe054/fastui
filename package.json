@@ -5,10 +5,10 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "fastui-calendar": "0.0.2",
+    "fastui-calendar": "0.0.4",
     "fastui-carousel": "0.0.3",
     "fastui-form": "0.0.3",
-    "fastui-spinner": "0.0.1",
+    "fastui-spinner": "0.0.2",
     "react-native": "^0.16.0",
     "react-native-ocss": "^1.1.0"
   }
