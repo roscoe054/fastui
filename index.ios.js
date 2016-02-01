@@ -24,7 +24,7 @@ var HomeScene = React.createClass({
     onPress: function(uiName){
         this.props.navigator.push({
             title: uiName,
-            test: "my prop",
+            startRender: new Date().getTime(),
             component: UIList[uiName]
         });
     },
