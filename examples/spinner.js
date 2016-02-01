@@ -18,17 +18,15 @@ var fastui = require('../src/ui.js'),
 var Form = React.createClass({
     getInitialState: function () {
         return {
-            step: '2',
+            step: '1',
             disabled: false,
             spinnerVal: '5',
-            settedSpinnerVal: '5'
         }
     },
     getSpinnerValue: function(val){
         this.setState({spinnerVal: val})
     },
     render: function () {
-        console.log(this.props);
         return (
             <View style={styles.container}>
                 <Spinner
@@ -44,15 +42,6 @@ var Form = React.createClass({
                         style={[styles.opeComponent, styles.input]}
                         onChangeText={(text) => this.setState({step: text})}
                         value={this.state.step}
-                    />
-                </View>
-
-                <View style={styles.operation}>
-                    <Text>Set value</Text>
-                    <TextInput
-                        style={[styles.opeComponent, styles.input]}
-                        onChangeText={(text) => this.setState({spinnerVal: text})}
-                        value={String(this.state.settedSpinnerVal)}
                     />
                 </View>
 
